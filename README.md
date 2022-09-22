@@ -3,7 +3,14 @@
 by default the application will run on port 8080
 
 Hitting the endpoint via below URI
-END POINT URI = http://localhost:8080/v1/user-management/users/add-user
+http://localhost:8080/v1/user-management/users/add-user
+
+to access the embded H2 database you can hit the below url:
+http://localhost:8080/h2-console/
+Driver Class: org.h2.Driver
+JDBC URL:jdbc:h2:mem:testdb
+User Name:sa
+Password:
 
 for test the saveUser end point you can try the below sample request:
 
@@ -11,8 +18,6 @@ for test the saveUser end point you can try the below sample request:
     "name": "sssss Dwwa",
     "password": "Dwwa"
 }
-
-
 
 expected output:
 
